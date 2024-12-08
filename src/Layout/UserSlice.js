@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import dbFire from "./Firebase";
 import {
   addDoc,
   collection,
@@ -8,6 +7,7 @@ import {
   getDocs,
   setDoc,
 } from "firebase/firestore";
+import { dbFire } from "./Firebase";
 
 const initialState = {
   userList: [],

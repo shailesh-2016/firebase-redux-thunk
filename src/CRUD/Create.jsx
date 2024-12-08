@@ -1,4 +1,3 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
@@ -7,6 +6,7 @@ import { Bounce, toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 const Create = () => {
+ 
   const {
     register,
     handleSubmit,
@@ -47,9 +47,13 @@ const Create = () => {
         });
       });
   }
+ 
 
   return (
     <>
+
+
+
 <div className="form-bg">
   <div className="container">
     <div className="row justify-content-center">
@@ -69,7 +73,7 @@ const Create = () => {
                   {...register("username", {
                     required: {
                       value: true,
-                      message: "Enter username",
+                      message: "Enter Username",
                     },
                     minLength: {
                       value: 3,
